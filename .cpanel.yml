@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/mhhz96vbuew3/public_html/neotoday.madmagic.art 
+    - /bin/cp -r * $DEPLOYPATH

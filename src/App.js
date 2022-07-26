@@ -27,11 +27,6 @@ function App() {
     closestTime:'loading',
   });
   
-
- 
-    
-    
-
   useEffect(()=>{
     fetch(requestLink, {
       method:"GET",
@@ -78,15 +73,15 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <h1 style={{textDecoration:"underline"}} >What is the Closest Astroid Passing by Our Lovely Planet Today?</h1>
+      
+        <h1 style={{textDecoration:"underline"}} >What is the Closest Asteroid Passing by Our Lovely Planet Today?</h1>
        
       <div className='info'> <h4>NEO Name: {neoInfo.neoName}</h4>
        <h4>Time closest to Earth: {neoInfo.closestTime}</h4>
        <h4>Diameter: {neoInfo.diameter} km</h4>
        <h4>Closest Distance: {neoInfo.closestLunar} Lunars</h4>
        <h4>Speed: {neoInfo.speedkms} km/s</h4></div>
-      </header>
+   
 
     </div>
   );
